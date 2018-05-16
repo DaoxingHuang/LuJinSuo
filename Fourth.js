@@ -12,6 +12,6 @@ var foo = {
 var go = foo.baz.bar;
 console.log(go());//3
 console.log(foo.baz.bar());//1
-//考察　指向
-//go()邦定的是　global window x = 3
-//foo.baz.bar　邦定的是 baz x=1
+//考察this指向
+//go() this邦定的是　global window x = 3
+//foo.baz.bar　this邦定的是 baz x=1
